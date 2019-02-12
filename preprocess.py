@@ -1,5 +1,9 @@
+import numpy as np
 from statsmodels.tsa.stattools import adfuller
+
 import matplotlib.pyplot as plt
+import plotly.plotly as py
+import plotly.graph_objs as go
 import pandas as pd
 
 def test_stationarity(timeseries):
