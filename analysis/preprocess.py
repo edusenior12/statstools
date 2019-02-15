@@ -27,3 +27,8 @@ def test_stationarity(timeseries):
     for key,value in dftest[4].items():
         dfoutput['Critical Value (%s)'%key] = value
     print (dfoutput)
+
+
+def nulls_check(dframe):
+    for _ in dframe.columns:
+        print("The number of null values in:{} == {}".format(_, data[_].isnull().sum()))
