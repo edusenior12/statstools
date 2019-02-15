@@ -31,4 +31,4 @@ def test_stationarity(timeseries):
 
 def nulls_check(dframe):
     for _ in dframe.columns:
-        print("The number of null values in:{} == {}".format(_, data[_].isnull().sum()))
+        print("The number of null values in:{} == {}".format(_, dframe[_].isnull().sum()))
